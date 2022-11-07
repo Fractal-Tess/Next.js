@@ -18,8 +18,10 @@
     "paths": {
       "$styles/*": ["src/styles/*"],
       "$components/*": ["src/components/*"],
-      "$types": ["src/types/index.ts"],
-      "$utils": ["src/utils/index.ts"]
+      "$types/*": ["src/types/*"],
+      "$utils/*": ["src/utils/*"],
+      "$data/*": ["src/data/*"],
+      "$context/*": ["src/context/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

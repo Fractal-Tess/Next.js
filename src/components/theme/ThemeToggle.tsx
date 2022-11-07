@@ -1,13 +1,13 @@
 import { useContext } from 'react';
-import { ThemeCtx } from './ThemeProvider';
+import { ThemeCtx } from '$context/ThemeProvider';
 
 export default function ThemeToggle() {
   const theme = useContext(ThemeCtx);
   return (
     <button
-      aria-label="theme toggling button"
-      className={`p-1 theme-toggle-btn`}
       onClick={theme?.toggleTheme}
+      aria-label="color theme toggling button"
+      className={`p-1 theme-toggle-btn`}
     >
       <svg className="h-6" aria-hidden="true" viewBox="0 0 24 24">
         <mask className="moon origin-center " id="moon-mask">
